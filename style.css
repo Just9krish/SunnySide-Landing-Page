@@ -114,7 +114,48 @@ select {
 }
 
 .nav-links {
-    /* display: ; */
-    position: absolute;
     background-color: var(--White);
+    padding: 1.87em 0em 2.8125em;
+    text-transform: capitalize;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    /* display: none; */
+}
+
+.nav-links::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 20px solid var(--White);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    top: -20px;
+    right: 0;
+}
+
+.nav-links li:not(:last-child) {
+    margin-bottom: 1.95em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Barlow', sans-serif;
+}
+
+.active-link {
+    background: var(--Yellow);
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 0.9rem;
+    padding: 0.6em 3.125em;
+    border-radius: 50px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
 }
