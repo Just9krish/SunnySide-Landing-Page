@@ -206,6 +206,9 @@ select {
 .info-division {
     text-align: center;
     padding: 3.15em 1.5627em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-heading {
@@ -232,6 +235,7 @@ select {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.9rem;
+    letter-spacing: 1.2px;
     padding: 0 0.625em;
     position: relative;
 }
@@ -247,4 +251,139 @@ select {
     bottom: -2px;
     z-index: -1;
     opacity: 0.5;
+}
+
+.learn-btn-transform::after {
+    background-color: var(--Yellow);
+}
+
+.learn-btn-stand-out::after {
+    background-color: var(--Soft-red);
+}
+
+.learn-btn-stand-out:hover:after,
+.learn-btn-transform:hover:after {
+    opacity: 1;
+}
+
+.graphic-division {
+    background: url(./images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photography-division {
+    background: url(/images/mobile/image-photography.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img-text-end {
+    justify-content: flex-end;
+    min-height: 630px;
+}
+
+.graphic-heading,
+.graphic-text {
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.photography-heading,
+.photography-text {
+    color: var(--Dark-blue-photography-text);
+}
+
+.img-text-end,
+.info-text {
+    margin-bottom: 0;
+}
+
+.testimonials-container {
+    padding: 3.125em 1.5625em;
+    text-align: center;
+}
+
+.testimonials-heading {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    margin-bottom: 3.125em;
+}
+
+.testimonials {
+    display: grid;
+    gap: 50px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 75px;
+}
+
+.testimonial {
+    font-family: "Barlow", sans-serif;
+    color: var(--Very-dark-grayish-blue);
+    margin: 1.87em 0;
+    line-height: 1.6;
+}
+
+.name {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0.3125em;
+}
+
+.designation {
+    font-family: "Barlow", sans-serif;
+    color: var(--Grayish-blue);
+    font-size: 0.9rem;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer */
+
+.footer {
+    color: var(--Dark-moderate-cyan-footer);
+    background-color: hsl(169, 45%, 70%);
+    text-align: center;
+    padding: 3.125em 2.5em;
+}
+
+.footer-nav-links {
+
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.875em 0 3.75em;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: var(--Dark-moderate-cyan-footer);
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9rem;
+}
+
+/* .footer-nav-links li:not(:last-child) {
+    margin-right: 50px;
+} */
+
+.footer-nav-link:hover,
+.socials:hover {
+    color: var(--White);
+}
+
+.socials a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.social-icon:hover {
+    filter: brightness(100);
 }
