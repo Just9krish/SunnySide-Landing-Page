@@ -181,17 +181,22 @@ select {
 }
 
 
-/* @keyframes MoveUpDown {
+@keyframes MoveUpDown {
 
-    0%,
-    100% {
-        bottom: 0;
+    0% {
+        transform: translateY(0);
     }
 
     50% {
-        bottom: 100px;
+        /* bottom: 100px; */
+        transform: translateY(100px);
     }
-} */
+
+    100% {
+        /* bottom: 100px; */
+        transform: translateY(-100px);
+    }
+}
 
 /* Info Container */
 
@@ -382,9 +387,18 @@ select {
 
 .socials a:not(:last-child) {
     margin-right: 25px;
-  }
+}
 
 .social-icon:hover {
     filter: brightness(100);
-  }
+}
 
+/* Media quries */
+
+@media (min-width: 768px) {
+    .site__header {
+        background: url(/images/desktop/image-header.jpg) top 50% center no-repeat;
+        background-size: cover;
+        padding: 3.125em;
+    }
+}
