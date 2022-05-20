@@ -192,3 +192,59 @@ select {
         bottom: 100px;
     }
 } */
+
+/* Info Container */
+
+.info-container {
+    display: grid;
+}
+
+.info-wrapper {
+    display: grid;
+}
+
+.info-division {
+    text-align: center;
+    padding: 3.15em 1.5627em;
+}
+
+.info-heading {
+    color: var(--Very-dark-desaturated-blue);
+    font-family: "Fraunces", serif;
+    font-size: 2.2rem;
+}
+
+.info-text {
+    color: var(--Dark-grayish-blue);
+    font-family: 'Barlow';
+    line-height: 1.6;
+    font-weight: 600;
+    margin: 1.25em 0;
+}
+
+.img-transform {
+    order: -1;
+}
+
+.learn-btn {
+    font-family: "Fraunces", serif;
+    color: var(--Very-dark-desaturated-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0 0.625em;
+    position: relative;
+}
+
+.learn-btn::after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 10px;
+    width: 100%;
+    border-radius: 50px;
+    left: 0;
+    bottom: -2px;
+    z-index: -1;
+    opacity: 0.5;
+}
