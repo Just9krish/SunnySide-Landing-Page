@@ -40,10 +40,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-/* ul[role='list'],
+ul[role='list'],
 ol[role='list'] {
     list-style: none;
-} */
+}
 
 /* Set core root defaults */
 html:focus-within {
@@ -356,7 +356,7 @@ select {
 }
 
 .footer-nav-links {
-
+    padding-left: 0;
     list-style: none;
     text-transform: capitalize;
     display: flex;
@@ -368,7 +368,7 @@ select {
     text-decoration: none;
     color: var(--Dark-moderate-cyan-footer);
     font-family: "Barlow", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 /* .footer-nav-links li:not(:last-child) {
@@ -382,8 +382,9 @@ select {
 
 .socials a:not(:last-child) {
     margin-right: 25px;
-}
+  }
 
 .social-icon:hover {
     filter: brightness(100);
-}
+  }
+
