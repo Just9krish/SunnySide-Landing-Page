@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://sunnyside-lp-just9krish.netlify.app/)
-- Live Site URL: [click here](https://www.frontendmentor.io/solutions/sunnyside-lp-Rj6XOxyZjK)
+- Live site URL: [Click here](https://sunnyside-lp-just9krish.netlify.app/)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/sunnyside-lp-Rj6XOxyZjK)
 
 ## My process
 
