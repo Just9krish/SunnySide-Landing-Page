@@ -28,7 +28,8 @@
 
   <body>
     <header class="site__header">
-      <nav class="site__navbar">
+      <!-- Navigation for mobile -->
+      <nav class="site__navbar-mob">
         <img src="./images/logo.svg" alt="Sunnyside" />
 
         <button class="nav__hamburger-btn">
@@ -38,12 +39,22 @@
             class="menu-icon"
           />
         </button>
+        <ul class="nav-links-mob">
+          <li><a href="#" class="nav-link-mob">about</a></li>
+          <li><a href="#" class="nav-link-mob">services</a></li>
+          <li><a href="#" class="nav-link-mob">projects</a></li>
+          <li><a href="#" class="nav-link-mob active-link-mob">contacts</a></li>
+        </ul>
+      </nav>
 
+      <!-- Navigation for desktop -->
+      <nav class="site__navbar">
+        <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         <ul class="nav-links">
-          <li><a href="#" class="nav-link">about</a></li>
-          <li><a href="#" class="nav-link">services</a></li>
-          <li><a href="#" class="nav-link">projects</a></li>
-          <li><a href="#" class="nav-link active-link">contacts</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Services</a></li>
+          <li><a href="#" class="nav-link">Projects</a></li>
+          <li><a href="#" class="nav-link active-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -57,7 +68,7 @@
 
     <main>
       <div class="info-container">
-        <div class="info-wrapper">
+        <div class="info-wrapper transform-division">
           <div class="info-division">
             <h2 class="info-heading">Transform your brand</h2>
             <p class="info-text">
@@ -76,7 +87,7 @@
             />
           </div>
         </div>
-        <div class="info-wrapper">
+        <div class="info-wrapper stand-out-division">
           <div class="img-division">
             <img
               src="./images/mobile/image-stand-out.jpg"
@@ -113,78 +124,83 @@
             photos that improve your business image.
           </p>
         </div>
+      </div>
 
-        <div class="testimonials-container">
-          <h3 class="testimonials-heading">Client testimonials</h3>
-          <div class="testimonials">
-            <div class="testimonials-div">
-              <div class="testimonials-info">
-                <div class="testimonial">
-                  <img src="./images/image-emily.jpg" class="profile-pic" alt="image-emily" />
-                  <p class="testimonial">
-                    We put our trust in Sunnyside and they delivered, making
-                    sure our needs were met and deadlines were always hit.
-                  </p>
-                </div>
-
-                <div class="person-info">
-                  <h4 class="name">Emily R.</h4>
-                  <p class="designation">Marketing Director</p>
-                </div>
-              </div>
+      <div class="testimonials-container">
+        <h3 class="testimonials-heading">Client testimonials</h3>
+        <div class="testimonials">
+          <div class="testimonials-div">
+            <div class="testimonials-info">
+              <img
+                src="./images/image-emily.jpg"
+                class="profile-pic"
+                alt="image-emily"
+              />
+              <p class="testimonial">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
             </div>
-            <div class="testimonials-div">
-              <div class="testimonials-info">
-                <div class="testimonial">
-                  <img src="./images/image-thomas.jpg" class="profile-pic" alt="image-emily" />
-                  <p class="testimonial">
-                    Sunnyside’s enthusiasm coupled with their keen interest in
-                    our brand’s success made it a satisfying and enjoyable
-                    experience.
-                  </p>
-                </div>
 
-                <div class="person-info">
-                  <h4 class="name">Thomas S.</h4>
-                  <p class="designation">Chief Operating Officer</p>
-                </div>
-              </div>
+            <div class="person-info">
+              <h4 class="name">Emily R.</h4>
+              <p class="designation">Marketing Director</p>
             </div>
-            <div class="testimonials-div">
-              <div class="testimonials-info">
-                <div class="testimonial">
-                  <img src="./images/image-jennie.jpg" class="profile-pic" alt="image-emily" />
-                  <p class="testimonial">
-                    Incredible end result! Our sales increased over 400% when we
-                    worked with Sunnyside. Highly recommended!
-                  </p>
-                </div>
+          </div>
+          <div class="testimonials-div">
+            <div class="testimonials-info">
+              <img
+                src="./images/image-thomas.jpg"
+                class="profile-pic"
+                alt="image-emily"
+              />
+              <p class="testimonial">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+            </div>
 
-                <div class="person-info">
-                  <h4 class="name">Jennie F.</h4>
-                  <p class="designation">Business Owner</p>
-                </div>
-              </div>
+            <div class="person-info">
+              <h4 class="name">Thomas S.</h4>
+              <p class="designation">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="testimonials-div">
+            <div class="testimonials-info">
+              <img
+                src="./images/image-jennie.jpg"
+                class="profile-pic"
+                alt="image-emily"
+              />
+              <p class="testimonial">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+            </div>
+
+            <div class="person-info">
+              <h4 class="name">Jennie F.</h4>
+              <p class="designation">Business Owner</p>
             </div>
           </div>
         </div>
-
-        <figure class="img-container">
-          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
-          <img
-            src="./images/desktop/image-gallery-orange.jpg"
-            alt="image-gallery-orange.jpg"
-          />
-          <img
-            src="./images/desktop/image-gallery-cone.jpg"
-            alt="image-gallery-cone.jpg"
-          />
-          <img
-            src="./images/desktop/image-gallery-sugarcubes.jpg"
-            alt="image-gallery-sugarcubes.jpg"
-          />
-        </figure>
       </div>
+
+      <figure class="img-container">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
+        <img
+          src="./images/desktop/image-gallery-orange.jpg"
+          alt="image-gallery-orange.jpg"
+        />
+        <img
+          src="./images/desktop/image-gallery-cone.jpg"
+          alt="image-gallery-cone.jpg"
+        />
+        <img
+          src="./images/desktop/image-gallery-sugarcubes.jpg"
+          alt="image-gallery-sugarcubes.jpg"
+        />
+      </figure>
     </main>
 
     <footer class="footer">
@@ -206,16 +222,28 @@
 
       <div class="socials">
         <a href="#"
-          ><img src="./images/icon-facebook.svg" class="social-icon" alt="icon-facebook"
+          ><img
+            src="./images/icon-facebook.svg"
+            class="social-icon"
+            alt="icon-facebook"
         /></a>
         <a href="#"
-          ><img src="./images/icon-instagram.svg" class="social-icon" alt="icon-instagram"
+          ><img
+            src="./images/icon-instagram.svg"
+            class="social-icon"
+            alt="icon-instagram"
         /></a>
         <a href="#"
-          ><img src="./images/icon-twitter.svg" class="social-icon" alt="icon-twitter"
+          ><img
+            src="./images/icon-twitter.svg"
+            class="social-icon"
+            alt="icon-twitter"
         /></a>
         <a href="#"
-          ><img src="./images/icon-pinterest.svg" class="social-icon" alt="icon-pinterest"
+          ><img
+            src="./images/icon-pinterest.svg"
+            class="social-icon"
+            alt="icon-pinterest"
         /></a>
       </div>
     </footer>
