@@ -19,9 +19,9 @@ for (let i = 0; i < linksMob.length; i++) {
 }
 
 for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function () {
-      let current = document.getElementsByClassName("active-link");
-      current[0].className = current[0].className.replace(" active-link", "");
-      this.className += " active-link";
-    });
-  }
+  links[i].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active-link");
+    current[0].className = current[0].className.replace(" active-link", "");
+    this.className += " active-link";
+  });
+}

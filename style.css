@@ -90,7 +90,6 @@ select {
         scroll-behavior: auto;
     }
 
-
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
@@ -163,8 +162,8 @@ select {
 }
 
 .nav-links-mob li a:hover:not(.active-link-mob) {
-background-color: #c5e5ff;
-padding: 0.8em 3.125em;
+    background-color: hsl(207, 100, 89);
+    padding: 0.8em 3.125em;
     border-radius: 50px
 }
 
@@ -207,10 +206,12 @@ padding: 0.8em 3.125em;
 
 
 @keyframes MoveUpDown {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-30px);
     }
